@@ -65,22 +65,12 @@ public class HomePage extends AbstractPage{
         waitElementToBeClickable(pasteTitle);
         pasteTitle.click();
         pasteTitle.sendKeys(title);
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         return this;
     }
 
     public HomePage createNewPaste()  {
         waitElementToBeClickable(createNewPasteButton);
         createNewPasteButton.click();
-        try {
-            Thread.sleep(1500);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         return this;
     }
 
